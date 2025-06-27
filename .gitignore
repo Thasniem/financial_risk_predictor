@@ -1,0 +1,32 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+
+# Model & data files
+models/
+*.pkl
+outputs/metrics.json
+outputs/plots/*.png
+outputs/feature_importance.csv
+
+# Datasets
+data/*.csv
+
+# Jupyter Notebook checkpoints
+*.checkpoint
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.venv/
+*.egg-info/
+*.log
+
+# Jupyter runtime
+.ipynb_checkpoints
