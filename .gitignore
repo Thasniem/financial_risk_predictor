@@ -1,32 +1,29 @@
-# Python artifacts
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.ipynb_checkpoints
 
-# Model & data files
+# Data and models
 models/
 *.pkl
-outputs/metrics.json
-outputs/plots/*.png
-outputs/feature_importance.csv
-
-# Datasets
 data/*.csv
 
-# Jupyter Notebook checkpoints
-*.checkpoint
+# Other output files (but allow the feature importance PNG)
+outputs/metrics.json
+outputs/feature_importance.csv
+!outputs/plots/feature_importance_cleaned.png
+outputs/plots/*
+!outputs/plots/
+!outputs/plots/feature_importance_cleaned.png
 
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Environment files
+# Environment
 .env
 .venv/
 *.egg-info/
 *.log
 
-# Jupyter runtime
-.ipynb_checkpoints
+# OS / notebook runtime
+.DS_Store
+Thumbs.db
