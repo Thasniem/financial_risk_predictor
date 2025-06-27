@@ -10,13 +10,12 @@ models/
 *.pkl
 data/*.csv
 
-# Other output files (but allow the feature importance PNG)
-outputs/metrics.json
+# Output files — keep metrics.json and cleaned PNG only
 outputs/feature_importance.csv
-!outputs/plots/feature_importance_cleaned.png
 outputs/plots/*
 !outputs/plots/
 !outputs/plots/feature_importance_cleaned.png
+!outputs/metrics.json
 
 # Environment
 .env
